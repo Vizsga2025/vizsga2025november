@@ -1,0 +1,136 @@
+@Vizsga2025 ➜ /workspaces/vizsga2025november (main) $ sudo apt update
+Get:1 https://dl.yarnpkg.com/debian stable InRelease
+Get:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]                                                                         
+Get:3 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease [3961 B]                                                                                             
+Get:4 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]                                                              
+Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:6 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [66.4 kB]
+Get:7 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main all Packages [643 B]
+Get:8 https://dl.yarnpkg.com/debian stable/main all Packages [11.8 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:10 https://dl.yarnpkg.com/debian stable/main amd64 Packages [11.8 kB]    
+Get:11 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable/main amd64 Packages [4557 B]
+Get:12 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1639 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]                
+Get:17 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]              
+Get:18 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2703 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [33.1 kB]  
+Get:20 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1170 kB]    
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1939 kB]       
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [35.9 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2842 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2005 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [33.9 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.4 kB]
+Fetched 34.8 MB in 3s (12.7 MB/s)                       
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+86 packages can be upgraded. Run 'apt list --upgradable' to see them.
+@Vizsga2025 ➜ /workspaces/vizsga2025november (main) $ sudo apt install apache2 -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 liblua5.4-0 ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom ufw
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 liblua5.4-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 86 not upgraded.
+Need to get 2086 kB of archives.
+After this operation, 8090 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libapr1t64 amd64 1.7.2-3.1ubuntu0.1 [108 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1t64 amd64 1.6.3-1.1ubuntu7 [91.9 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.3-1.1ubuntu7 [11.2 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-ldap amd64 1.6.3-1.1ubuntu7 [9116 B]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 liblua5.4-0 amd64 5.4.6-3build2 [166 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-bin amd64 2.4.58-1ubuntu8.8 [1331 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-data all 2.4.58-1ubuntu8.8 [163 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-utils amd64 2.4.58-1ubuntu8.8 [97.7 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2 amd64 2.4.58-1ubuntu8.8 [90.2 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 ssl-cert all 1.1.2ubuntu1 [17.8 kB]
+Fetched 2086 kB in 0s (8750 kB/s)     
+Preconfiguring packages ...
+Selecting previously unselected package libapr1t64:amd64.
+(Reading database ... 58629 files and directories currently installed.)
+Preparing to unpack .../0-libapr1t64_1.7.2-3.1ubuntu0.1_amd64.deb ...
+Unpacking libapr1t64:amd64 (1.7.2-3.1ubuntu0.1) ...
+Selecting previously unselected package libaprutil1t64:amd64.
+Preparing to unpack .../1-libaprutil1t64_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package liblua5.4-0:amd64.
+Preparing to unpack .../4-liblua5.4-0_5.4.6-3build2_amd64.deb ...
+Unpacking liblua5.4-0:amd64 (5.4.6-3build2) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.58-1ubuntu8.8_amd64.deb ...
+Unpacking apache2-bin (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../6-apache2-data_2.4.58-1ubuntu8.8_all.deb ...
+Unpacking apache2-data (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../7-apache2-utils_2.4.58-1ubuntu8.8_amd64.deb ...
+Unpacking apache2-utils (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.58-1ubuntu8.8_amd64.deb ...
+Unpacking apache2 (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../9-ssl-cert_1.1.2ubuntu1_all.deb ...
+Unpacking ssl-cert (1.1.2ubuntu1) ...
+Setting up ssl-cert (1.1.2ubuntu1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ssl-cert.service → /usr/lib/systemd/system/ssl-cert.service.
+Setting up libapr1t64:amd64 (1.7.2-3.1ubuntu0.1) ...
+Setting up liblua5.4-0:amd64 (5.4.6-3build2) ...
+Setting up apache2-data (2.4.58-1ubuntu8.8) ...
+Setting up libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up apache2-utils (2.4.58-1ubuntu8.8) ...
+Setting up apache2-bin (2.4.58-1ubuntu8.8) ...
+Setting up apache2 (2.4.58-1ubuntu8.8) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /usr/lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /usr/lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+@Vizsga2025 ➜ /workspaces/vizsga2025november (main) $ sudo service apache2 start 
+ * Starting Apache httpd web server apache2                                                                                                                                     AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+ * 
+@Vizsga2025 ➜ /workspaces/vizsga2025november (main) $ sudo service apache2 status
+ * apache2 is running
+@Vizsga2025 ➜ /workspaces/vizsga2025november (main) $ 
